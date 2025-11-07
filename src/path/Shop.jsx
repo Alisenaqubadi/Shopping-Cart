@@ -1,8 +1,18 @@
-import "../css/App.css";
+import { useState, useEffect } from "react";
 import { Link } from "react-router"
 import { Body, Nav, Content, NavButton, } from "../styled/AppStyled";
+import "../css/App.css";
 
 function Shop() {
+
+  const [storeItem,setStoreItem] = useState([])
+
+  useEffect( ()=>{
+    const items = []
+
+    // for()
+  })
+
   return (<Body>
     <Nav>
       <NavButton> <Link to="/">Home</Link></NavButton>
