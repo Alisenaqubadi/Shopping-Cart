@@ -76,3 +76,29 @@ export const Button = styled.button`
         border: solid antiquewhite;
     }
 `
+
+export const CartP = styled.p`
+    font-size: large;
+    position: relative;
+    top: 15%;
+    left: 6%;
+    background: red;
+    height: 3vw;
+    width: 3vw;
+    border-radius: 100%;
+
+    @media (max-width: 697px) {
+        height: 4vw;
+        width: 4vw;
+    } 
+    
+    @media (max-width: 497px) {
+        height: 5vw;
+        width: 5vw;
+    } 
+
+     @media (max-width: 400px) {
+        height: 6.5vw;
+        width: 6.5vw;
+    }
+`

@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     {
         path: "cart",
         element: <Cart />,
-        errorElement: <Error404 />
+        // errorElement: <Error404 />
     },
     {
         path: "shop",

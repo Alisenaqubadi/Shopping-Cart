@@ -1,6 +1,6 @@
 import { useState, useEffect, useContext } from "react";
 import { Link } from "react-router-dom"
-import { Body, Nav, Content, NavButton, H1, AppContent } from "../styled/AppStyled";
+import { Body, Nav, Content, NavButton, H1, AppContent, CartP } from "../styled/AppStyled";
 import { ItemsContainer, ItemContainer, Image, P, H3, Button, ButtonDiv, ButtonsP } from "../styled/ShopStyled";
 import { GlobalContext } from "../GlobalContext";
 import "../css/App.css";
@@ -117,7 +117,7 @@ function Shop() {
     <Nav>
       <NavButton> <Link to="/">Home</Link></NavButton>
       <NavButton style={{ background: 'white', color: "black"}}> <Link to="/shop">Shop</Link></NavButton>
-      <NavButton> <Link to="/cart">Cart</Link></NavButton>
+      <NavButton> <Link to="/cart">Cart { cartItems.length !== 0 && <CartP>{cartItems.length}</CartP>}</Link></NavButton>
     </Nav>
     <Content>
       <ItemsContainer>
