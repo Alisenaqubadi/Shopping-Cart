@@ -14,7 +14,8 @@
     "test": "vitest",
     "test:watch": "vitest --watch",
     "test:coverage": "vitest --coverage",
-    "deploy-github": "git branch gh-pages || true && git checkout gh-pages && git merge main --no-edit && git add dist -f && git commit -m 'Deployment commit' || true && git subtree push --prefix dist origin gh-pages && git checkout main"
+    "deploy-github": "git branch gh-pages || true && git checkout gh-pages && git merge main --no-edit && git add dist -f && git commit -m 'Deployment commit' || true && git subtree push --prefix dist origin gh-pages && git checkout main",
+    "redeploy-github": "git checkout main && git branch -D gh-pages || true && git push origin --delete gh-pages || true && git branch gh-pages && git checkout gh-pages && git merge main --no-edit && git add dist -f && git commit -m 'Fresh deployment' || true && git subtree push --prefix dist origin gh-pages && git checkout main"
   },
   "dependencies": {
     "react": "^19.1.1",
