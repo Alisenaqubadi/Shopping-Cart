@@ -1,5 +1,5 @@
 import "../css/App.css";
-import { Link } from "react-router"
+import { Link } from "react-router-dom"
 import { Body, Nav, Content, NavButton, } from "../styled/AppStyled";
 
 function Cart() {

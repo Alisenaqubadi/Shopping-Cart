@@ -7,16 +7,17 @@ export const Body = styled.div`
     height: 100%;
 `
 export const Nav = styled.div`
-    flex: 1;
     display: flex;
     justify-content: space-around;
+    height: calc(100vh / 9);
     `
 
 export const Content = styled.div`
-    flex: 8;
+    height: calc(100vh/9 * 8);
 `
 
 export const NavButton = styled.div`
+    /* height: calc(100vh/9); */
     width: calc(100%/5);
     font-size: 200%;
     text-align: center;
@@ -24,6 +25,10 @@ export const NavButton = styled.div`
     background-color: ${props => props.bg};
     color: ${props => props.color};
     border-radius: 0 0 ${props => props.color === "black" ? "0" : "100%"} ${props => props.color === "black" ? "0" : "100%"} ;
+    @media (max-width: 400px) {
+        width: calc(100%/3);
+    }
+
 `
 
 export const AppContent = styled.div`
@@ -62,6 +67,7 @@ export const Button = styled.button`
     border: solid;
     transition: all 0.3s ease;
     position: relative;
+    min-width: fit-content;
 
 
     &:hover{

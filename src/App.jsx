@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link } from "react-router"
+import { Link } from "react-router-dom"
 import { Body, Nav, Content, NavButton, AppContent, H1, Button, StyledLink, P } from "./styled/AppStyled";
 import "./css/App.css";
 

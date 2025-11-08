@@ -1,4 +1,4 @@
-import { createBrowserRouter } from "react-router";
+import { createBrowserRouter } from "react-router-dom";
 import App from "./App"
 import Error404 from "./path/Error404";
 import Cart from "./path/Cart";
