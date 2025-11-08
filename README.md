@@ -1,16 +1,95 @@
-# React + Vite
+# Shopping Cart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern shopping cart web application built with React and Vite. This project demonstrates a simple e-commerce experience, including product browsing, cart management, and routing, with a clean and responsive UI.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- 🛒 **Add/Remove Products**: Browse products and add or remove them from your cart.
+- 🛍️ **Cart Management**: View cart contents, update quantities, and see the total price.
+- 🔄 **React Context API**: Global state management for cart and shop data.
+- ⚡ **Vite**: Fast development and build tooling.
+- 🎨 **Styled Components**: Modular, maintainable CSS-in-JS styling.
+- 🗺️ **Routing**: Navigate between Shop, Cart, and 404 pages.
+- ✅ **Testing**: Includes tests with Jest and Vitest.
+- 🧹 **Linting**: ESLint for code quality.
 
-## React Compiler
+## Project Structure
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+```
+src/
+	App.jsx              # Main app component
+	GlobalContext.jsx    # React Context for global state
+	main.jsx             # App entry point
+	route.jsx            # App routing
+	assets/              # Images and static assets
+	css/                 # CSS files
+		App.css
+		index.css
+	path/                # Page components
+		Cart.jsx
+		Error404.jsx
+		Shop.jsx
+	styled/              # Styled components
+		AppStyled.js
+		CartStyled.js
+		Error404Styled.js
+		ShopStyled.js
+public/                 # Static public files
+```
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+- Node.js (v16+ recommended)
+- npm or yarn
+
+### Installation
+
+```bash
+npm install
+```
+
+### Development
+
+```bash
+npm run dev
+```
+
+Open [http://localhost:5173](http://localhost:5173) to view the app.
+
+### Build
+
+```bash
+npm run build
+```
+
+### Preview Production Build
+
+```bash
+npm run preview
+```
+
+### Testing
+
+- **Jest**: `npm test`
+- **Vitest**: `npm run test:unit`
+
+## Scripts
+
+- `dev` - Start development server
+- `build` - Build for production
+- `preview` - Preview production build
+- `test` - Run Jest tests
+- `test:unit` - Run Vitest unit tests
+
+## Technologies Used
+
+- [React](https://react.dev/)
+- [Vite](https://vitejs.dev/)
+- [Styled Components](https://styled-components.com/)
+- [Jest](https://jestjs.io/) & [Vitest](https://vitest.dev/)
+- [ESLint](https://eslint.org/)
+
+## License
+
+This project is licensed under the MIT License.
